@@ -1,0 +1,7 @@
+<!-- <svg>: contenedor SVG. Atributos en uso: xmlns, width, height, viewBox. Otros: preserveAspectRatio -->
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <!-- <rect>: rectángulo. Atributos en uso: width, height, fill, rx. Otros: x, y, stroke, stroke-width -->
+  <rect width="240" height="80" fill="#2b79c7" rx="10"/>
+  <!-- <text>: texto SVG. Atributos en uso: x, y, dominant-baseline, text-anchor, font-family, font-size, fill -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial" font-size="20" fill="#fff">Mi Logo</text>
+</svg>

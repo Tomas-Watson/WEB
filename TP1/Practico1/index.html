@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Punto 6 del Tp1 -->
+    <ol>
+        <li>Argentina
+            <ul>
+                <li><a href="La Nación">LaNacion</a></li>
+                <li><a href="Clarin">Clarin</a></li>
+                <li><a href="Pagina 12">Pagina12</a></li>
+            </ul>
+        </li>
+        <li>España
+            <ul>
+                <li><a href="El País Digital">ElPaisDigital</a></li>
+                <li><a href="ABC">ABC</a></li>
+                <li><a href="El Mundo">ElMundo</a></li>
+            </ul>
+        </li>
+        <li>México
+            <ul>
+                <li><a href="La Jornada">LaJornada</a></li>
+                <li><a href="El Universal">ElUniversal</a></li>
+            </ul>
+        </li>
+    </ol>
+
+    <hr>
+
+    <!--Punto 7 del Tp1 -->
+    <table border="1" cellpadding="3">
+        <caption>Población de los paises con mayor cantidad<br>de habitantes.</caption>
+        <tr><th>Paises</th><th>Cantidad de Habitantes</th></tr>
+
+        <tbody>
+            <tr><td>China</td><td>1300 millones</td></tr>
+            <tr><td>India</td><td>1080 millones</td></tr>
+            <tr><td>Estados Unidos</td><td>295 millones</td></tr>
+        </tbody>
+    </table>
+
+    <hr>
+    <!--Punto 8 del Tp1 -->
+    <table border="1">
+        <caption>Titulo de tabla</caption>
+        <tr><th rowspan="2">Tabla Avanzada</th><th colspan="2">Cabecera Mutiples Columnas</th></tr>
+        <tr><th>Primera Col. Cab.</th><th>Segunda Col. Cab.</th></tr>
+        <tr><th>Fila1</th><td>Fila 1 Columna 1</td><td>Fila 1 Columna 2</td></tr>
+        <tr><th>Fila2</th><td>Fila 2 Columna 1</td><td>Fila 2 Columna 2</td></tr>
+        <tr><td colspan="3">Pie de tabla.</td></tr>
+    </table>
+
+    <hr>
+    <!--Punto 9 del Tp1 -->
+    <table border="1"> 
+        <caption><h1>Redes Sociales</h1></caption>
+        <tr><th colspan="2">Nombre</th><th>¿Tengo cuenta?</th><th>Valoración</th><th>Dirección</th></tr>
+        
+        <tr><td rowspan="2">Facebook</td><td rowspan="2"><img src="../imagenes/Facebook.png" alt="Imagen de Facebook" width="100" height="100"></td><td rowspan="2"><input type="checkbox" value="si" checked></td><td>⭐ ⭐ ☆ ☆ ☆</td><td rowspan="2"><a href="https://www.facebook.com/" target="_blank">Facebook</a></td></tr>
+        <tr><td>2.5</td></tr>
+        
+        <tr><td rowspan="2">Flcikr</td><td rowspan="2"><img src="../imagenes/Flickr.png" alt="Imagen de Flickr" width="100" height="100"></td><td rowspan="2"><input type="checkbox" value="si" checked></td><td>⭐ ⭐ ⭐ ⭐ ☆</td><td rowspan="2"><a href="https://www.flickr.com/" target="_blank">Flickr</a></td></tr>
+        <tr><td>4.25</td></tr>
+        
+        <tr><td rowspan="2">Vimeo</td><td rowspan="2"><img src="../imagenes/Vimeo.jpg" alt="Imagen de Vimeo" width="100" height="100"></td><td rowspan="2"><input type="checkbox" value="si"></td><td>☆ ☆ ☆ ☆ ☆</td><td rowspan="2"><a href="https://www.vimeo.com/" target="_blank">Vimeo</a></td></tr>
+        <tr><td>Sin valorar todavía</td></tr>
+        
+        <tr><td rowspan="2">Youtube</td><td rowspan="2"><img src="../imagenes/youtube.png" alt="Imagen de Youtube" width="100" height="100"></td><td rowspan="2"><input type="checkbox" value="si" checked></td><td>⭐ ⭐ ☆ ☆ ☆</td><td rowspan="2"><a href="https://www.youtube.com/" target="_blank">Youtube</a></td></tr>
+        <tr><td>2.75</td></tr>
+    </table>
+
+    <hr>
+    <!--Punto 10 del Tp1 -->
+    <!-- Action lo que hace es enviar los datos del formulario a un servidor 
+     pero con "procesar" los datos quedan en la pagina-->
+    <form action="/procesar" method="post">
+        <!-- Uso post porque en este caso los datos del formulario quedan dentro del html--> 
+        <table border="1" cellspacing="0">
+            <tr><th align="center" colspan="8" style="background-color:rgb(102, 95, 95);"> Formulario de inicio de sesión de capacitación</th></tr>
+            <tr><td align="center" colspan="8"> Fecha de registro: año mes día</td></tr>
+
+            <tr><td align="center" colspan="2" style="background-color:rgb(255, 115, 0);">Temas de formación</td> 
+                <td colspan="2"> <input type="text" style="width: 100%;"></td>
+                <td align="center" colspan="2" style="background-color:rgb(255, 115, 0);">fecha de entrenamiento</td> 
+                <td colspan="2"> <input type="text" style="width: 100%;"> </td>
+            </tr>
+
+            <tr><td align="center" colspan="2" style="background-color:rgb(255, 115, 0);">Entrenador</td> 
+                <td colspan="2"> <input type="text" style="width:100%;"></td>
+                <td align="center" colspan="2" style="background-color:rgb(255, 115, 0);"> Formulario de entrenamiento</td> 
+                <td colspan="2"> <input type="text" style="width:100%;"></td>
+            </tr>
+
+            <tr><td align="center" colspan="8" style="background-color:rgb(102, 95, 95);">Columna de firma</td></tr>
+
+            <tr><td align="center" style="background-color:rgb(255, 115, 0);">Número de serie</td> 
+                <td align="center" style="background-color:rgb(255, 115, 0);"> Nombre de departamento</td> 
+                <td align="center" style="background-color:rgb(255, 115, 0);"> Título de puesto</td>
+                <td align="center" style="background-color:rgb(255, 115, 0);">Nombre</td> 
+                <td align="center" style="background-color:rgb(255, 115, 0);">Número de serie</td> 
+                <td align="center" style="background-color:rgb(255, 115, 0);"> Nombre de departamento</td> 
+                <td align="center" style="background-color:rgb(255, 115, 0);"> Título de puesto</td>
+                <td align="center" style="background-color:rgb(255, 115, 0);">Nombre</td>
+            </tr>
+            
+            <tbody>
+                <tr><td>1</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td>12</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>2</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"> </td> <td>13</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>3</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"> </td> <td>14</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>4</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"></td> <td>15</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>5</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"></td> <td>16</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>6</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"> </td> <td>17</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>7</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"></td> <td>18</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>8</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"></td> <td> <input type="text" style="width:100%;"></td> <td>19</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>9</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"></td> <td> <input type="text" style="width:100%;"></td> <td>19</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>10</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"></td> <td>20</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>11</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"></td> <td>21</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td><input type="text" style="width:100%;"> </td></tr>
+                <tr><td>12</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"></td> <td> <input type="text" style="width:100%;"></td> <td>22</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>13</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100;"></td> <td> <input type="text" style="width:100%;"></td> <td>23</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td></tr>
+                <tr><td>14</td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100;"> </td> <td> <input type="text" style="width:100%;"></td> <td>24</td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"> </td> <td> <input type="text" style="width:100%;"></td></tr>
+            </tbody>
+
+            <tr> <td colspan="2" style="background-color:rgb(255, 115, 0);"> Número de personas que deben estar presentes</td> <td> </td> <td colspan="2"> Asistencia real</td> <td> <input type="text" style="width:100;"> </td> <td>Número de ausencias</td> <td> <input type="text" style="width:100;"> </td></tr>
+            <tr> <td colspan="2" style="background-color:rgb(255, 115, 0);"> Llegada tardía</td> <td colspan="6"> <input type="text" style="width:100;"></td></tr>
+            <tr> <td colspan="2" style="background-color:rgb(255, 115, 0);"> Abandonos prematuros</td> <td colspan="6"> <input type="text" style="width:100;"></td></tr>
+            <tr> <td colspan="2" style="background-color:rgb(255, 115, 0);"> Otras instrucciones</td> <td colspan="6"> <input type="text" style="width:100;"></td></tr>
+        </table>
+    </form>
+
+    <!-- Punto 11 del TP1-->
+    <hr>
+
+    <table border="1" cellspacing="0">
+
+        <tr> <td> </td></tr>
+    </table>
+    
+</body>
+</html>

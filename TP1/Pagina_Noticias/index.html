@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- <!DOCTYPE html>: declara el tipo de documento. No lleva atributos -->
+<html lang="es">
+    <!-- <html>: elemento raíz. Atributos en uso: lang. Otros atributos posibles: manifest (obsoleto). -->
+<head>
+    <!-- <head>: metadatos del documento. No lleva atributos -->
+    <meta charset="UTF-8">
+        <!-- <meta charset>: define la codificación de caracteres. Atributos: charset (ej. UTF-8) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta name="viewport">: controla el viewport en móviles. Atributos: name, content -->
+    <title>Primeros pasos en HTML</title>
+        <!-- <title>: título mostrado en la pestaña. No lleva atributos -->
+    <meta name="description" content="Ejemplo didáctico con las etiquetas HTML más comunes, enlaces e imágenes">
+        <!-- <meta>: metadatos varios. Atributos: name, content, http-equiv, charset -->
+    <style>
+        /* <style>: CSS embebido. Atributos comunes: scoped (obsoleto) — si no tiene atributos: no lleva atributos */
+        body { font-family: Arial, Helvetica, sans-serif; line-height: 1.5; padding: 20px; }
+        header, nav, main, footer { display: block; margin-bottom: 16px; }
+        nav a { margin-right: 10px; }
+        .grid { display: flex; gap: 12px; flex-wrap: wrap; }
+        .card { border: 1px solid #ddd; padding: 12px; border-radius: 6px; width: 320px; }
+        figure img { max-width: 100%; height: auto; }
+        code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <!-- <body>: contenido visible. Atributos comunes: class, id, style -->
+    <header>
+        <!-- <header>: encabezado de página/ sección. No lleva atributos -->
+        <h1><center>Mi primera página HTML</center></h1>
+            <!-- <h1>: título principal. Atributos comunes: id, class; si no tiene atributos en el elemento, no lleva atributos -->
+        <p>Ejemplo con las etiquetas más comunes para aprender HTML.</p>
+            <!-- <p>: párrafo. Atributos comunes: class, id, title. No lleva atributos en este caso -->
+    </header>
+
+    <nav>
+        <!-- <nav>: navegación. Atributos comunes: role, aria-label. No lleva atributos aquí -->
+        <a href="index.html">Inicio</a>
+            <!-- <a>: enlace. Atributos en uso: href. Otros atributos: target, rel, download, hreflang, title -->
+        <a href="pagina2.html">Página 2 (ejemplo)</a>
+            <!-- <a> no lleva atributos extras en este elemento aparte de href -->
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener">MDN: HTML (externo)</a>
+            <!-- <a> con atributos target y rel para abrir en otra pestaña y seguridad -->
+    </nav>
+
+    <main>
+        <!-- <main>: contenido principal. No lleva atributos -->
+        <section>
+            <!-- <section>: sección del documento. Atributos comunes: id, aria-*; no lleva atributos aquí -->
+            <h2>Estructura básica</h2>
+                <!-- <h2>: subtítulo. No lleva atributos -->
+            <p>Algunas etiquetas básicas: <code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code>, <code>&lt;ul&gt;</code>/<code>&lt;ol&gt;</code>, <code>&lt;table&gt;</code>.</p>
+                <!-- <p> sin atributos -->
+        </section>
+
+        <section>
+            <!-- sección de listas -->
+            <h2>Listas</h2>
+            <ul>
+                <!-- <ul>: lista desordenada. Atributos: class, id, type (obsoleto) — aquí no lleva atributos -->
+                <li>Elemento de lista (ul)</li>
+                    <!-- <li>: elemento de lista. No lleva atributos -->
+                <li>Segundo elemento</li>
+                <li>Lista ordenada dentro:
+                    <ol>
+                        <!-- <ol>: lista ordenada. Atributos: start, type (obsoleto). No lleva atributos aquí -->
+                        <li>Primero</li>
+                        <li>Segundo</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Imágenes</h2>
+            <div class="grid">
+                <!-- <div>: contenedor genérico. Atributos comunes: class, id, style -->
+                <figure class="card">
+                    <!-- <figure>: figura con pie. Atributos: class, id; no lleva atributos más específicos aquí -->
+                    <img src="imagenes/logo.svg" alt="Logo de ejemplo">
+                        <!-- <img>: imagen. Atributos en uso: src, alt. Otros: width, height, loading, decoding, srcset, sizes -->
+                    <figcaption>Imagen SVG local: logo.svg</figcaption>
+                        <!-- <figcaption>: pie de figura. No lleva atributos -->
+                </figure>
+
+                <figure class="card">
+                    <img src="imagenes/photo.svg" alt="Foto de ejemplo">
+                        <!-- <img> con src y alt -->
+                    <figcaption>Imagen SVG local: photo.svg</figcaption>
+                </figure>
+            </div>
+            <p>También puedes usar imágenes externas:
+                <a href="https://via.placeholder.com/150" target="_blank" rel="noopener">Placeholder 150x150</a>
+            </p>
+        </section>
+
+        <section>
+            <h2>Tabla</h2>
+            <table border="1" cellpadding="6">
+                <!-- <table>: tabla de datos. Atributos en uso: border, cellpadding (presentes pero hoy se usan CSS). Otros: summary (obsoleto), role, aria-* -->
+                <thead>
+                    <!-- <thead>: encabezado de tabla. No lleva atributos -->
+                    <tr><th>Nombre</th><th>Edad</th><th>Ciudad</th></tr>
+                        <!-- <tr>, <th>: fila / cabecera de tabla. Atributos comunes: scope (en <th>), colspan, rowspan -->
+                </thead>
+                <tbody>
+                    <tr><td>Ana</td><td>24</td><td>Buenos Aires</td></tr>
+                    <tr><td>Juan</td><td>30</td><td>Madrid</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulario simple</h2>
+            <form action="#" method="get">
+                <!-- <form>: formulario. Atributos en uso: action, method. Otros: enctype, autocomplete, novalidate, target -->
+                <label>Nombre: <input type="text" name="nombre" placeholder="Tu nombre"></label>
+                    <!-- <label>: etiqueta de formulario. No lleva atributos aquí. <input>: tipo, name, placeholder; otros: value, required, maxlength, minlength -->
+                <br><br>
+                <label>Comentario:<br>
+                    <textarea name="comentario" rows="3" cols="40" placeholder="Escribe algo..."></textarea>
+                        <!-- <textarea>: atributos en uso: name, rows, cols, placeholder. Otros: maxlength, required -->
+                </label>
+                <br><br>
+                <button type="submit">Enviar</button>
+                    <!-- <button>: Atributos: type (submit, button, reset), disabled, name, value -->
+            </form>
+        </section>
+
+        <section>
+            <h2>Código y citas</h2>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;...
+            </code></pre>
+                <!-- <pre> y <code>: bloques de código. No llevan atributos aquí -->
+            <blockquote>Una cita de ejemplo para practicar la etiqueta <code>&lt;blockquote&gt;</code>.</blockquote>
+                <!-- <blockquote>: cita larga. No lleva atributos -->
+        </section>
+
+    </main>
+
+    <aside>
+        <!-- <aside>: contenido complementario. No lleva atributos -->
+        <h3>Consejo</h3>
+        <p>Guarda tus archivos y abre <strong>index.html</strong> en el navegador para ver los cambios.</p>
+            <!-- <strong>: énfasis fuerte, no lleva atributos -->
+    </aside>
+
+    <hr><footer>
+        <!-- <footer>: pie de página. No lleva atributos -->
+        <p>
+            <center>Hecho como ejemplo didáctico. <a href="pagina2.html">Ir a la página 2</a></p>
+            <!-- <p> sin atributos -->
+    </footer></hr>
+
+</body>
+</html>
