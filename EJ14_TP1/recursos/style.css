@@ -1,0 +1,131 @@
+/*El asterisco (*) selecciona absolutamente todos los elementos de la página. La propiedad box-sizing: border-box es una regla de oro en diseño web moderno: hace que cuando le pongas un ancho, un borde o un espacio interno (padding) a cualquier caja, esos bordes
+ y espacios se sumen hacia adentro y no rompan el tamaño total ni estiren la pantalla de forma indeseada.*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  color: #222;
+  background-color: #f5f5f0;
+}
+
+/* ---------- Encabezado ---------- */
+header {
+  background-color: #1b9096;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #d8e6d9;
+}
+
+/* ---------- Menú de navegación principal ---------- */
+nav {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),/*dibuja una linea semitransparente para que la imagen no sea tan brillante*/
+                    url("./imagenes/equipo.webp");
+ background-size: cover;/*estira toda la imagen para que cubra todo el ancho de pantalla*/
+  background-position: center;
+
+}
+
+/* Selecciona la lista dentro del menú */
+nav ul {
+  list-style: none;/* Le saca los puntitos negros o viñetas típicas de las listas */
+  margin: 0;
+  padding: 0;
+  display: flex;/* Convierte la lista vertical en una Fila Horizontal */
+  flex-wrap: wrap;/* Si la pantalla es muy chica, permite que los botones bajen a la siguiente línea en lugar de salirse de la pantalla */
+}
+
+nav li {
+  border-right: 1px solid #118f96;/* Dibuja una línea divisoria verde a la derecha de cada botón */
+}
+
+/* Selecciona los enlaces del menú principal y los hace más grandes */
+nav a {
+  display: block;/* Hace que el enlace ocupe todo el espacio de su botoncito */
+  color: #fff;
+  text-decoration: none;/* Le saca la línea subrayada de los hipervínculos */
+  padding: 30px 28px; /*Agranda el botón por dentro (22px arriba/abajo y 20px a los lados)*/
+}
+
+/*:hover: Detecta el momento exacto en el que el usuario pasa el cursor del mouse por arriba de un botón*/
+nav a:hover {
+  background-color: #46a6ab;/* Cambia el fondo del botón a un verde oscuro cuando pasas el cursor */
+}
+
+
+/* ---------- Contenido principal ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;/*Centra esa caja blanca horizontalmente en la pantalla (arriba/abajo 0, y a los costados se reparte automáticamente para centrarla)*/
+  padding: 20px;
+  background-color: #fff;
+  min-height: 400px;/*asegura que el fondo blanco tenga minimo 400px para que no se vea como aplastado*/
+}
+
+main h2 {
+  color: #1b9096;
+  border-bottom: 2px solid #c9a54b;
+  padding-bottom: 5px;
+}
+
+main h3 {
+  color: #7a4228;
+}
+
+main figure{
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 15px 0;
+}
+
+table caption {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #eee;
+  width: 35%;
+}
+/*regla para que el sitio sea responsivo*/
+img {
+  max-width: 100%;/*ajustael ancho de la imagen para que no quede fuera de la pantalla si se maximiza alguna imagen*/
+  height: auto;/*ajusta el alto de la imagen automaticamente para que no se deforme*/
+}
+
+/* ---------- Pie de página ---------- */
+footer {
+  background-color: #1b9096;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.85rem;
+}
+
+footer a {
+  color: #c9a54b;
+}

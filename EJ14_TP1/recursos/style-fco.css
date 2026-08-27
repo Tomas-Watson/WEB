@@ -1,0 +1,54 @@
+/* ==========================================================
+   style-fco.css — Hereda el style.css principal y cambia 
+   únicamente los colores de identidad para Ferro de Pico
+   ========================================================== */
+
+/* 1. Heredamos todo el diseño estructural del CSS general */
+@import url("./style.css");
+
+/* 2. Sobrescribimos únicamente los colores institucionales de Ferro */
+
+/* Encabezado en un verde  */
+header {
+  background-color: #1b4d3e;
+}
+
+header p {
+  color: #c2dcd1;
+}
+
+/* Menú principal: color al pasar el mouse y botón activo de Ferro */
+nav a:hover {
+  background-color: #2d6a54;
+}
+
+nav a.activo {
+  background-color: #4e9f3d; /* Verde vibrante / verdolaga */
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Contenido principal: Títulos con detalles en el verde de Ferro */
+main h2 {
+  color: #1b4d3e;
+  border-bottom: 2px solid #4e9f3d;
+}
+
+main h3 {
+  color: #2d6a54;
+}
+
+/* Cabeceras de las tablas y bordes sutiles */
+th {
+  background-color: #e6f0e8;
+  color: #1b4d3e;
+}
+
+th, td {
+  border: 1px solid #c8dcd0;
+}
+
+/* Pie de página acorde a la temática */
+footer {
+  background-color: #1b4d3e;
+}
