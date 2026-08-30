@@ -1,0 +1,6 @@
+@import url("./style.css");
+header, footer { background-color: #0033a0; }
+nav a:hover, nav a.activo { background-color: #0050e6; color: #fff; font-weight: bold; }
+main h2 { color: #0033a0; border-bottom: 2px solid #0050e6; }
+main h3 { color: #002266; }
+th { background-color: #e6f0ff; color: #0033a0; }
