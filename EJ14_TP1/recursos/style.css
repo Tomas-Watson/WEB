@@ -68,7 +68,7 @@ nav a:hover {
 
 /* ---------- Contenido principal ---------- */
 main {
-  max-width: 900px;
+  /*max-width: 900px;
   margin: 0 auto;/*Centra esa caja blanca horizontalmente en la pantalla (arriba/abajo 0, y a los costados se reparte automáticamente para centrarla)*/
   padding: 20px;
   background-color: #fff;
