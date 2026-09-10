@@ -2,7 +2,7 @@
 
 header, footer { background-color: #aa0000; }
 
-nav a:hover, nav a.activo { background-color: #000000; color: #fff; font-weight: bold; }
+nav a:hover, nav a.activo { background-color: #971818; color: #fff; font-weight: bold; }
 
 main h2 { color: #aa0000; border-bottom: 2px solid #000000; }
 
