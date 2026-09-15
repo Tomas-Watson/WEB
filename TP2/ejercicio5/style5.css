@@ -1,0 +1,72 @@
+/* Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo verde lima/amarillento y fuente con serifas como en el ejemplo */
+body {
+    background-color: #ced63d; 
+    font-family: "Times New Roman", Times, serif;
+    padding: 40px; /* Separación general de los bordes de la pantalla */
+}
+
+/* --- ESTRUCTURA GENERAL --- */
+.contenedor-pagina {
+    display: flex;
+    gap: 30px; /* Separación entre el menú y el texto */
+    max-width: 900px;
+}
+
+/* --- MENÚ LATERAL --- */
+.menu-lateral {
+    width: 200px; /* Ancho fijo para el menú */
+    flex-shrink: 0;
+}
+
+.menu-lateral ul {
+    list-style: none; /* Quita las viñetas */
+}
+
+.menu-lateral li {
+    margin-bottom: 15px; /* Espacio entre cada botón */
+}
+
+/* Diseño de los botones del menú */
+.menu-lateral a {
+    display: block; /* Permite que el enlace ocupe todo el ancho disponible */
+    background-color: #ffffff; /* Fondo blanco */
+    color: #0000cc; /* Color azul clásico de los enlaces web */
+    text-decoration: none; /* Quita el subrayado */
+    padding: 8px 10px;
+    font-size: 1.1rem;
+    
+    /* TRUCO: El cuadrado negro de la derecha es en realidad un borde muy grueso */
+    border-right: 25px solid #000000; 
+}
+
+/* Efecto opcional al pasar el mouse (hover) para darle interactividad */
+.menu-lateral a:hover {
+    background-color: #f0f0f0;
+}
+
+/* --- CONTENIDO PRINCIPAL --- */
+.contenido-principal {
+    flex-grow: 1;
+}
+
+/* Título púrpura */
+.contenido-principal h1 {
+    color: #800080; 
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+/* Párrafos del texto */
+.contenido-principal p {
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

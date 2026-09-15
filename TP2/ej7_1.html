@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heladería - Ejercicio 7</title>
+    <!-- Vinculamos el CSS compartido -->
+    <link rel="stylesheet" href="css/style7.css">
+</head>
+<body>
+
+    <main class="contenedor-caja">
+        <h1>Heladería</h1>
+        <h2>Añade un producto:</h2>
+        
+        <!-- El atributo 'action' indica a qué página ir al presionar 'Enviar' -->
+        <form action="ej7_2.html" method="GET" class="formulario-helado">
+            
+            <!-- Campo: Categoría -->
+            <div class="grupo-form">
+                <label for="categoria">Categoría</label>
+                <select id="categoria" name="categoria">
+                    <option value="" disabled selected>Seleccione Categoría...</option>
+                    <option value="helado">Helado</option>
+                    <option value="torta">Torta</option>
+                </select>
+            </div>
+
+            <!-- Campo: Tamaños / Sabores -->
+            <div class="grupo-form">
+                <p class="etiqueta-falsa">Sabores que ofrecemos</p>
+                <div class="opciones-en-linea">
+                    <label><input type="radio" name="tamano" value="pequeno"> Pequeño (2)</label>
+                    <label><input type="radio" name="tamano" value="mediano"> Mediano (5)</label>
+                    <label><input type="radio" name="tamano" value="grande"> Grande (7)</label>
+                </div>
+            </div>
+
+            <!-- Campo: Complementos -->
+            <div class="grupo-form">
+                <p class="etiqueta-falsa">Complementos:</p>
+                <div class="opciones-columna">
+                    <label><input type="checkbox" name="complemento" value="mani"> Maní</label>
+                    <label><input type="checkbox" name="complemento" value="chispas_choco"> Chispas de Chocolate</label>
+                    <label><input type="checkbox" name="complemento" value="chispas_colores"> Chispas de Colores</label>
+                    <label><input type="checkbox" name="complemento" value="leche_condensada"> Leche Condensada</label>
+                </div>
+            </div>
+
+            <!-- Botones de acción -->
+            <div class="grupo-botones">
+                <!-- type="submit" dispara el 'action' del formulario -->
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <!-- type="reset" limpia todos los campos del formulario -->
+                <button type="reset" class="btn-borrar">Borrar</button>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>

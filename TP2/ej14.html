@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva - Ejercicio 14</title>
+    <link rel="stylesheet" href="css/style14.css">
+</head>
+<body>
+
+    <main class="contenedor-galeria">
+        <h1>Galería Interactiva</h1>
+        <p>Pasa el cursor sobre las imágenes y haz clic en ellas para ver los eventos.</p>
+        
+        <div class="lista-imagenes">
+            
+            <!-- IMAGEN 1: Abre la ventana de impresión -->
+            <!-- ATENCIÓN: Reemplaza "foto1.jpg" por una imagen tuya -->
+            <img src="recursos/foto1.jpg" alt="Imagen 1" 
+                 onmouseover="destacar(this)" 
+                 onmouseout="restablecer(this)" 
+                 onclick="imprimirPagina()">
+
+            <!-- IMAGEN 2: Cambia su apariencia/alerta al hacer clic -->
+            <!-- ATENCIÓN: Reemplaza "foto2.jpg" por una imagen tuya -->
+            <img src="recursos/foto2.jpg" alt="Imagen 2" 
+                 onmouseover="destacar(this)" 
+                 onmouseout="restablecer(this)" 
+                 onclick="mostrarAlerta()">
+
+            <!-- IMAGEN 3: Pide confirmación para guardar -->
+            <!-- ATENCIÓN: Reemplaza "foto3.jpg" por una imagen tuya -->
+            <img src="recursos/foto3.jpg" alt="Imagen 3" 
+                 onmouseover="destacar(this)" 
+                 onmouseout="restablecer(this)" 
+                 onclick="simularGuardar()">
+                 
+        </div>
+    </main>
+
+    <!-- Vinculamos la lógica de los eventos -->
+    <script src="js/script14.js"></script>
+</body>
+</html>

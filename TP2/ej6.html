@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner Primavera - Ejercicio 6</title>
+    <!-- Vinculamos nuestro CSS -->
+    <link rel="stylesheet" href="css/style6.css">
+</head>
+<body>
+
+    <!-- Contenedor principal que agrupa las 3 columnas -->
+    <main class="contenedor-tres-columnas">
+
+        <!-- COLUMNA 1: Izquierda (Fondo Azul) -->
+        <section class="columna-azul">
+            <!-- La etiqueta <br> fuerza el salto de línea para que quede igual al PDF -->
+            <h1>Ha llegado la<br>primavera y es<br>hora de correr.</h1>
+        </section>
+
+        <!-- COLUMNA 2: Centro (Imagen) -->
+        <section class="columna-imagen">
+            <!-- ATENCIÓN: Descarga una foto de personas corriendo/estirando, guárdala en tu 
+                 carpeta "recursos" y cambia "corredores.jpg" por el nombre de tu foto. -->
+            <img src="recursos/corredores.jpg" alt="Personas estirando en el parque">
+        </section>
+
+        <!-- COLUMNA 3: Derecha (Cita Textual) -->
+        <section class="columna-cita">
+            <!-- blockquote es la etiqueta semántica correcta para citas de otros autores -->
+            <blockquote>
+                "No se moleste en ser mejor que sus contemporáneos o predecesores. Trate de ser mejor que usted mismo".
+            </blockquote>
+            <!-- cite se usa para indicar el autor de la cita -->
+            <cite>- WILLIAM FAULKNER</cite>
+        </section>
+
+    </main>
+
+</body>
+</html>

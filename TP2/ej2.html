@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura Semántica - Ejercicio 2</title>
+    <!-- Vinculamos nuestro nuevo archivo de estilos -->
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+
+    <!-- Contenedor principal que envuelve todo para darle el fondo gris claro -->
+    <div class="contenedor-principal">
+        
+        <!-- Título principal -->
+        <h1 class="titulo-principal">Estructura Semántica del HTML5</h1>
+
+        <!-- Bloque 1: Cabecera -->
+        <header class="caja-turquesa">
+            Etiqueta Header
+        </header>
+
+        <!-- Bloque 2: Navegación principal -->
+        <nav class="caja-turquesa">
+            Etiqueta Nav
+        </nav>
+
+        <!-- Contenedor Flexbox para la fila del medio que tiene 3 columnas -->
+        <div class="fila-columnas">
+            
+            <!-- Columna Izquierda -->
+            <aside class="caja-turquesa columna-lateral">
+                Etiqueta Aside
+            </aside>
+
+            <!-- Columna Central (Es más ancha) -->
+            <section class="caja-turquesa columna-central">
+                Etiqueta Section
+                
+                <!-- Caja gris oscura que va adentro de la sección -->
+                <article class="caja-interna">
+                    Etiqueta Article
+                </article>
+            </section>
+
+            <!-- Columna Derecha -->
+            <nav class="caja-turquesa columna-lateral">
+                Etiqueta Nav 2
+            </nav>
+
+        </div>
+
+        <!-- Bloque 3: Pie de página -->
+        <footer class="caja-turquesa">
+            Etiqueta Footer
+        </footer>
+
+    </div>
+
+</body>
+</html>

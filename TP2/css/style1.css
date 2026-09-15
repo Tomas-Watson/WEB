@@ -1,0 +1,71 @@
+/* Reseteo básico para quitar márgenes que los navegadores ponen por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Evita que el padding sume tamaño extra a las cajas */
+}
+
+/* Estilo del fondo de toda la página */
+body {
+    /* El ejercicio muestra un fondo de madera oscura. 
+       ATENCIÓN: Si descargas un fondo de madera, ponlo en la carpeta "recursos" 
+       y descomenta la línea de abajo borrando las barras y asteriscos. */
+    /* background-image: url('recursos/fondo-madera.jpg'); */
+    
+    background-color: #333; /* Color gris oscuro temporal por si no pones imagen de madera */
+    font-family: 'Times New Roman', serif; /* Tipografía clásica similar a la del ejemplo */
+    display: flex; /* Usamos Flexbox para centrar la tarjeta en la pantalla */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Ocupa el 100% del alto de la ventana del navegador */
+}
+
+/* Estilos de la tarjeta blanca que contiene la receta */
+.tarjeta-contenedor {
+    background-color: #ffffff;
+    width: 400px; /* Ancho fijo para mantener la proporción de la foto del TP */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Sombra para que resalte sobre el fondo */
+    overflow: hidden; /* Si algo sobresale de la tarjeta, lo recorta */
+}
+
+/* Contenedor de la foto para manejar el tamaño */
+.tarjeta-imagen img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la foto para que no se deforme */
+    display: block; /* Elimina un pequeño espacio en blanco que a veces queda debajo de las imágenes */
+}
+
+/* Estilos para el texto dentro de la tarjeta blanca */
+.tarjeta-cuerpo {
+    padding: 30px; /* Espacio interno de 30px alrededor de los textos */
+    text-align: center; /* Centra todos los textos (título, párrafo y enlace) */
+}
+
+/* Estilos del título "Receta para Pizza" */
+.tarjeta-cuerpo h1 {
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 15px; /* Separación hacia abajo */
+}
+
+/* Estilos de la línea gris tenue */
+.linea-divisoria {
+    border: none;
+    border-top: 1px solid #e0e0e0; /* Dibuja una línea muy suave */
+    margin-bottom: 20px;
+}
+
+/* Estilos del texto de descripción */
+.texto-descripcion {
+    font-size: 14px;
+    color: #555; /* Un gris medio para que no canse la vista al leer */
+    line-height: 1.5; /* Separación entre los renglones para que sea más legible */
+    text-align: left; /* Aunque el cuerpo esté centrado, este párrafo en la foto parece alineado a la izquierda/justificado */
+    margin-bottom: 25px; /* Espacio antes del enlace */
+}
+
+/* Estilos del hipervínculo final */
+.enlace-receta {
+    font-size: 14px;
+    color: #4a2b75; /* Color violáceo oscuro similar al de la imagen del PDF */
+}

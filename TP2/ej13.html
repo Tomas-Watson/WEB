@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora - Ejercicio 13</title>
+    <!-- Vinculamos el CSS -->
+    <link rel="stylesheet" href="css/style13.css">
+</head>
+<body>
+
+    <main class="contenedor-calculadora">
+        <!-- El visor negro de la calculadora -->
+        <div class="pantalla">
+            <!-- Arriba mostramos la operación en curso (ej: 89 *) -->
+            <div id="pantalla-historial"></div>
+            <!-- Abajo mostramos el número que estamos tipeando (ej: 3) -->
+            <div id="pantalla-actual">0</div>
+        </div>
+        
+        <!-- El panel de botones -->
+        <div class="teclado">
+            <!-- Primera fila: Acciones y Porcentaje -->
+            <button class="btn-accion" onclick="limpiarTodo()">CE</button>
+            <button class="btn-accion" onclick="limpiarActual()">C</button>
+            <button class="btn-accion" onclick="cambiarSigno()">±</button>
+            <button class="btn-operador" onclick="agregarOperador('%')">%</button>
+
+            <!-- Segunda fila: Números y División -->
+            <button class="btn-numero" onclick="agregarNumero('7')">7</button>
+            <button class="btn-numero" onclick="agregarNumero('8')">8</button>
+            <button class="btn-numero" onclick="agregarNumero('9')">9</button>
+            <button class="btn-operador" onclick="agregarOperador('/')">÷</button>
+
+            <!-- Tercera fila: Números y Multiplicación -->
+            <button class="btn-numero" onclick="agregarNumero('4')">4</button>
+            <button class="btn-numero" onclick="agregarNumero('5')">5</button>
+            <button class="btn-numero" onclick="agregarNumero('6')">6</button>
+            <button class="btn-operador" onclick="agregarOperador('*')">x</button>
+
+            <!-- Cuarta fila: Números y Resta -->
+            <button class="btn-numero" onclick="agregarNumero('1')">1</button>
+            <button class="btn-numero" onclick="agregarNumero('2')">2</button>
+            <button class="btn-numero" onclick="agregarNumero('3')">3</button>
+            <button class="btn-operador" onclick="agregarOperador('-')">-</button>
+
+            <!-- Quinta fila: Cero, Decimal, Igual y Suma -->
+            <button class="btn-numero" onclick="agregarNumero('0')">0</button>
+            <button class="btn-numero" onclick="agregarDecimal('.')">.</button>
+            <button class="btn-igual" onclick="calcular()">=</button>
+            <button class="btn-operador" onclick="agregarOperador('+')">+</button>
+        </div>
+    </main>
+
+    <!-- Vinculamos el JavaScript al final del body -->
+    <script src="js/script13.js"></script>
+</body>
+</html>

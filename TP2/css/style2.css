@@ -1,0 +1,80 @@
+/* Reseteo básico de márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #ffffff; /* Fondo exterior blanco */
+}
+
+/* El recuadro gris claro que agrupa todo el gráfico */
+.contenedor-principal {
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px; /* Evita que se estire infinitamente en monitores grandes */
+    margin: 0 auto; /* Lo centra horizontalmente en la pantalla */
+}
+
+/* Estilo del título h1 */
+.titulo-principal {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* ESTILO BASE: Aplica a todos los bloques color turquesa */
+.caja-turquesa {
+    background-color: #2ab0a5; /* El color verde agua/turquesa del PDF */
+    border: 2px solid #84c7c0; /* Borde un poquito más claro */
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px; /* Margen para separar las filas (Header, Nav, etc.) */
+    font-weight: bold;
+    color: #000;
+}
+
+/* LÓGICA DE FLEXBOX: Contenedor de la fila del medio */
+.fila-columnas {
+    display: flex; /* Pone los elementos hijos uno al lado del otro */
+    gap: 10px; /* Crea un canal/espacio de 10px entre las columnas automáticamente */
+    margin-bottom: 10px; /* Separación con el footer que va abajo */
+}
+
+/* LÓGICA DE FLEXBOX: Las dos columnas finitas de los costados (Aside y Nav 2) */
+.columna-lateral {
+    flex: 1; /* Le dice al navegador: "Ocupa solo 1 porción del espacio" */
+    margin-bottom: 0; /* Le quitamos el margen porque usamos el 'gap' del padre */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el texto "Etiqueta Aside" verticalmente */
+}
+
+/* LÓGICA DE FLEXBOX: La columna ancha del centro (Section) */
+.columna-central {
+    flex: 3; /* Le dice al navegador: "Ocupa 3 porciones del espacio" (es el triple de ancha que las laterales) */
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column; /* Apila el texto y la caja Article uno arriba del otro */
+    justify-content: flex-start; /* Tira el texto hacia arriba */
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding-top: 15px;
+}
+
+/* La caja gris que va metida adentro de la columna central */
+.caja-interna {
+    background-color: #90a4ae; /* Color gris azulado oscuro */
+    width: 90%; /* Ocupa el 90% del ancho de la Section */
+    height: 200px; /* Altura fija para que la caja tenga cuerpo */
+    margin-top: 20px; /* Se separa del texto "Etiqueta Section" */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centra el texto "Etiqueta Article" adentro */
+    border-radius: 5px;
+}

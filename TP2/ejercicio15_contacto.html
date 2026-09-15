@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Ejercicio 15</title>
+    <link rel="stylesheet" href="css/style15.css">
+</head>
+<body>
+
+    <main class="contenedor-contacto">
+        <header class="cabecera-contacto">
+            <h1>Contact Us</h1>
+            <p>500 Terry Francois Street San Francisco, CA 94158</p>
+            <!-- Enlaces requeridos por el TP -->
+            <p><a href="mailto:info@mysite.com" class="link-especial">info@mysite.com</a></p>
+            <p><a href="tel:1234567890" class="link-especial">123-456-7890</a></p>
+        </header>
+
+        <!-- El action redirige a la página de respuesta -->
+        <form action="ejercicio15_respuesta.html" method="GET" class="formulario-grid">
+            
+            <div class="grupo-input">
+                <label for="nombre">Name</label>
+                <input type="text" id="nombre" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="grupo-input">
+                <label for="direccion">Address</label>
+                <input type="text" id="direccion" placeholder="Enter your address">
+            </div>
+
+            <div class="grupo-input">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="telefono">Phone</label>
+                <input type="tel" id="telefono" placeholder="Enter your phone number">
+            </div>
+
+            <!-- Este campo ocupa las dos columnas -->
+            <div class="grupo-input ancho-completo">
+                <label for="asunto">Subject</label>
+                <input type="text" id="asunto" placeholder="Type the subject">
+            </div>
+
+            <div class="grupo-input ancho-completo">
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+            
+        </form>
+    </main>
+
+</body>
+</html>

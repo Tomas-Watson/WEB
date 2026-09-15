@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- lang="es" indica que el idioma de la página es español -->
+<html lang="es">
+<head>
+    <!-- meta charset="UTF-8" permite que se lean bien las ñ y los tildes -->
+    <meta charset="UTF-8">
+    <!-- viewport asegura que la página sea responsiva y se vea bien en celulares -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta para Pizza - Ejercicio 1</title>
+    
+    <!-- Vinculamos nuestro archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+
+    <!-- El contenedor principal (main) agrupa todo el contenido de la tarjeta -->
+    <main class="tarjeta-contenedor">
+        
+        <!-- Sección de la imagen. 
+             ATENCIÓN: Aquí debes cambiar la ruta por la imagen de pizza que descargues.
+             Guarda una foto de una pizza en tu carpeta "recursos" y cambia "pizza.jpg" por tu archivo. -->
+        <div class="tarjeta-imagen">
+            <img src="recursos/pizza.jpg" alt="Foto de una pizza casera">
+        </div>
+
+        <!-- Contenedor para los textos, así les damos margen y espaciado interno -->
+        <div class="tarjeta-cuerpo">
+            <!-- Título principal de la receta -->
+            <h1>Receta para Pizza</h1>
+            
+            <!-- Etiqueta hr (horizontal rule) crea la línea divisoria debajo del título -->
+            <hr class="linea-divisoria">
+            
+            <!-- Párrafo con el texto simulado (Lorem ipsum) que pide el ejercicio -->
+            <p class="texto-descripcion">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate
+                quasi, magnam tenetur dolorem, ut reprehenderit? Sapiente quas a
+                tenetur ut odio laborum aut culpa magnam tempore deleniti. Neque,
+                omnis, eius.
+            </p>
+            
+            <!-- Enlace inferior. El href="#" significa que por ahora no lleva a ningún lado -->
+            <a href="#" class="enlace-receta">Ver la receta completa</a>
+        </div>
+
+    </main>
+
+</body>
+</html>

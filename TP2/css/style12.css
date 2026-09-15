@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+}
+
+/* --- BARRA DEL RELOJ EN EL TOPE --- */
+.barra-superior {
+    background-color: #1a1a1a; /* Fondo casi negro */
+    color: #00ff00; /* Verde brillante tipo reloj LED */
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 3px solid #00ff00;
+    /* La sombra ayuda al efecto "neón" */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+#reloj-digital {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 3px; /* Separa los números para que se lea mejor */
+    /* Tipografía monoespaciada para que los números no "bailen" al cambiar */
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+/* --- CONTENIDO DE RELLENO --- */
+.contenido-pagina {
+    padding: 40px;
+    text-align: center;
+    color: #333;
+}
+
+.contenido-pagina h1 {
+    margin-bottom: 15px;
+}

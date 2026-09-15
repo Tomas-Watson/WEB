@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor-galeria {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.contenedor-galeria h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contenedor-galeria p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* Contenedor que agrupa las fotos en fila */
+.lista-imagenes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Diseño base de las imágenes */
+.lista-imagenes img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    /* transition hace que cualquier cambio de CSS demore 0.3 segundos, creando una animación */
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+/* --- CLASE PARA EL EVENTO ONMOUSEOVER --- */
+/* Cuando JS agregue esta clase, la imagen crecerá un 15% y le saldrá una sombra */
+.destacada {
+    transform: scale(1.15);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    z-index: 10; /* La trae al frente para que no se superponga detrás de otras */
+    position: relative;
+}

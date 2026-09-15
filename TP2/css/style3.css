@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0e0e0;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px;
+}
+
+/* CSS Grid: Crea automáticamente una cuadrícula perfecta */
+.contenedor-galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Le decimos que cree 2 columnas del mismo ancho (1 fracción cada una) */
+    gap: 30px; /* Separación entre las tarjetas */
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* El marco blanco de la foto */
+.tarjeta {
+    background-color: #ffffff;
+    padding: 15px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* El bloque oscuro interior que sostiene la imagen y el texto */
+.tarjeta-contenido {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Distribuye el título, texto y botón equitativamente */
+    min-height: 280px;
+    padding: 20px;
+}
+
+/* La franja negra del título */
+.tarjeta-titulo {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    text-transform: uppercase; /* Fuerza las mayúsculas */
+    margin-top: 10px;
+}
+
+/* El texto simulado de la descripción */
+.tarjeta-texto {
+    color: #ffffff;
+    font-style: italic; /* Letra en cursiva como pide el TP */
+    text-align: center;
+    font-family: 'Times New Roman', serif;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 15px 0;
+    padding: 0 10px;
+}
+
+/* Botón inferior */
+.tarjeta-btn {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.tarjeta-btn:hover {
+    background-color: #333333;
+}

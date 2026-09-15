@@ -1,0 +1,67 @@
+/* Reseteo básico de márgenes y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Tipografía limpia sin serifas */
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.contenedor-tres-columnas {
+    display: flex; /* Coloca las 3 secciones una al lado de la otra */
+    width: 100%;
+    min-height: 100vh; /* Ocupa el 100% de la altura visible de la pantalla */
+}
+
+/* --- CONFIGURACIÓN COMPARTIDA PARA LAS 3 COLUMNAS --- */
+.columna-azul, .columna-imagen, .columna-cita {
+    flex: 1; /* Esto obliga a que las tres midan exactamente lo mismo de ancho */
+    display: flex;
+}
+
+/* --- COLUMNA 1: FONDO AZUL --- */
+.columna-azul {
+    background-color: #1a82ea; /* Azul brillante similar al del PDF */
+    color: #ffffff;
+    align-items: flex-end; /* Empuja el texto hacia abajo */
+    padding: 50px 40px; /* Le da espacio interno para que el texto no toque los bordes */
+}
+
+.columna-azul h1 {
+    font-size: 2.5rem;
+    font-weight: normal; /* El texto en el PDF no es súper grueso, sino estilizado */
+    line-height: 1.2; /* Separación entre las líneas del título */
+}
+
+/* --- COLUMNA 2: IMAGEN --- */
+.columna-imagen img {
+    width: 100%; /* Ocupa todo el ancho de su columna */
+    height: 100%; /* Ocupa todo el alto de su columna */
+    object-fit: cover; /* Recorta la imagen automáticamente para que no se deforme si la pantalla cambia de tamaño */
+    display: block;
+}
+
+/* --- COLUMNA 3: CITA TEXTUAL --- */
+.columna-cita {
+    background-color: #eef1f6; /* Gris muy claro con un toque azulado */
+    flex-direction: column; /* Apila el texto y el autor uno arriba del otro */
+    padding: 60px 40px;
+    color: #333333;
+}
+
+/* Estilos de la frase */
+.columna-cita blockquote {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 25px; /* Separación antes del nombre del autor */
+}
+
+/* Estilos del autor */
+.columna-cita cite {
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase; /* Convierte el texto a mayúsculas automáticamente */
+    font-style: normal; /* Quita la cursiva que traen las etiquetas <cite> por defecto */
+    text-align: right; /* Alinea el nombre a la derecha como en la foto */
+    letter-spacing: 1px; /* Separa un poco las letras para que se vea más elegante */
+}
