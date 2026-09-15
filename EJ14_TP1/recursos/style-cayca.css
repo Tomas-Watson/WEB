@@ -1,6 +1,12 @@
 @import url("./style.css");
-header, footer { background-color: #0033a0; }
+header, footer { background-color: #0338ac; }
 nav a:hover, nav a.activo { background-color: #0050e6; color: #fff; font-weight: bold; }
 main h2 { color: #0033a0; border-bottom: 2px solid #0050e6; }
 main h3 { color: #002266; }
 th { background-color: #e6f0ff; color: #0033a0; }
+header img {
+  background-color: #ffffff;
+  border-radius: 50%; /* Hace que el fondo sea un círculo perfecto */
+  padding: 5px; /* Deja un margen de respiración entre el escudo y el borde blanco */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+}
