@@ -2,6 +2,7 @@
 const elementoFecha = document.getElementById('resultado-fecha');
 
 // 2. Instanciamos el objeto Date para obtener la información del sistema
+//Const quiere decir que es una variable constante, por lo que no cambiara su valor ne la ejecucuión
 const fechaActual = new Date();
 
 // 3. Traducimos los números a nombres de días y meses usando arreglos (Arrays)

@@ -33,6 +33,11 @@ btnCalcular.addEventListener('click', function() {
     const arregloDeTextos = textoIngresado.split(',');
     const arregloDeNumeros = [];
 
+    /*
+    *Una variable del tipo let tiene su alcance limitado
+    *a un bloque de codigo
+    *Ademas puede reasignarse
+    */
     for (let i = 0; i < arregloDeTextos.length; i++) {
         // Parseamos a entero para evitar que se concatenen como si fueran palabras
         const numeroLimpio = parseInt(arregloDeTextos[i].trim()); 
